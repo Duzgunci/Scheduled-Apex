@@ -1,0 +1,14 @@
+public class MySchedule implements Schedulable{
+   
+    public void execute(SchedulableContext SC){
+        Account acc = new Account ();
+        acc.Name = 'Clarusway Schedule';
+        insert acc;
+
+
+------*****DEBUG SCREEN****------------------
+1.MySchedule myClass = new MySchedule();
+  system.schedule(‘My Apex Class ‘, ‘0 0 12 * * ?’, myClass);
+
+
+2. system.schedule(‘My Apex Class ‘, ‘0 0 12 * * ?’, new MySchedule());
